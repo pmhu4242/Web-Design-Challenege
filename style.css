@@ -1,5 +1,5 @@
 body {
-    background: hsl(0, 0%, 85%);
+    background: rgb(217, 217, 217);
   }
 
 h1 {
@@ -31,8 +31,11 @@ h1 {
 #plots,
 #comparisons,
 #data {
-    position: relative;
+    position: static;
     float: right;
+    align-items: right;
+    top: 1rem;
+    right: 1rem;
     text-align: right;
     font-size: 1rem;
     
@@ -43,3 +46,28 @@ h1 {
     color: #000;
     text-decoration: none;
   }
+
+  .box {
+    position: relative;
+    margin-top: 2rem
+    align-items: center;
+    min-height: 50px;
+    padding: 5px;
+    margin: 50px;
+    font-weight: 800;
+    color: #fff;
+  }
+  
+  .skyblue {
+    background: deepskyblue;
+  }
+  
+  .purple {
+    background: rgb(250, 247, 247);
+ 
+  }
+  
+  .red {
+    background: indianred;
+  }
+  
