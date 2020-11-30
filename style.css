@@ -1,0 +1,45 @@
+body {
+    background: hsl(0, 0%, 85%);
+  }
+
+h1 {
+    font-size: 2rem;
+    color: teal  }
+/* Giving our navbar some padding and a background color */
+.navbar {
+    background: white;
+  }
+  
+  /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+  .navbar li {
+    display: inline-block;
+    position: relative;
+    padding: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 5px;
+  }
+#title {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    font-weight: 1000;
+}
+#plots,
+#comparisons,
+#data {
+    position: relative;
+    float: right;
+    text-align: right;
+    font-size: 1rem;
+    
+}
+  
+  /* Getting rid of the default link styles here */
+  .navbar li a {
+    color: #000;
+    text-decoration: none;
+  }
