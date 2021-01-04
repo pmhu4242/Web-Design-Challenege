@@ -1,73 +1,116 @@
-body {
-    background: rgb(217, 217, 217);
-  }
-
-h1 {
-    font-size: 2rem;
-    color: teal  }
-/* Giving our navbar some padding and a background color */
-.navbar {
-    background: white;
-  }
-  
-  /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
-  .navbar li {
-    display: inline-block;
-    position: relative;
-    padding: 25px;
-    margin-right: 10px;
-    margin-left: 10px;
-    cursor: pointer;
-    background: #fff;
-    border-radius: 5px;
-  }
-#title {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    font-size: 2rem;
-    font-weight: 1000;
-}
-#plots,
-#comparisons,
-#data {
-    position: static;
-    float: right;
-    align-items: right;
-    top: 1rem;
-    right: 1rem;
-    text-align: right;
-    font-size: 1rem;
-    
-}
-  
-  /* Getting rid of the default link styles here */
-  .navbar li a {
-    color: #000;
-    text-decoration: none;
-  }
-
-  .box {
-    position: relative;
-    margin-top: 2rem
-    align-items: center;
-    min-height: 50px;
-    padding: 5px;
-    margin: 50px;
-    font-weight: 800;
-    color: #fff;
-  }
-  
-  .skyblue {
-    background: deepskyblue;
-  }
-  
-  .purple {
-    background: rgb(250, 247, 247);
- 
-  }
-  
-  .red {
-    background: indianred;
-  }
-  
+                    body {
+                        background: #d4d2d2;
+                    }
+                    
+                    h1 {
+                        font-size: 2rem;
+                        color: teal;
+                    }
+                    
+                    h2 {
+                        font-size: 1rem;
+                    }
+                    /* Giving our navbar some padding and a background color */
+                    
+                    .navbar {
+                        padding: 10px;
+                        background: #f9fafa;
+                    }
+                    /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+                    
+                    .navbar-nav li {
+                        display: inline-block;
+                        float: right;
+                        position: relative;
+                        right: -35rem;
+                        text-align: right;
+                        padding: 20px;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                        cursor: pointer;
+                        border-radius: 3px;
+                    }
+                    /* Getting rid of the default link styles here */
+                    /* .navbar li a {
+                    color: #000;
+                    text-decoration: none;
+                } */
+                    /* Styling the header, giving it a height, a background color, and some top padding */
+                    
+                    .header {
+                        height: 200px;
+                        padding-top: 20px;
+                        background: #cdcdcd;
+                    }
+                    /* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
+                    
+                    .header h1 {
+                        padding: 60px;
+                        margin: 0;
+                        color: teal;
+                        text-align: center;
+                    }
+                    /* Giving the .post element margin on 3 sides */
+                    
+                    .post {
+                        margin-top: 50px;
+                        margin-right: 100px;
+                        margin-left: 100px;
+                    }
+                    
+                    .container {
+                        background-color: white;
+                        position: relative;
+                        margin-top: 3rem;
+                    }
+                    
+                    #title {
+                        position: absolute;
+                        float: left;
+                        top: 1rem;
+                        left: 1rem;
+                        font-size: 2rem;
+                        font-weight: 1000;
+                    }
+                    
+                    #plots,
+                    #comparisons,
+                    #data {}
+                    /* position: relative;
+float: right;
+align-items: right;
+top: 1rem;
+right: 1rem;
+text-align: right;
+font-size: 1rem; */
+                    
+                    .navbar-brand {
+                        font-size: 2rem;
+                        text-emphasis-color: white;
+                        background-color: teal;
+                        padding: 1rem;
+                        margin-top: 0px;
+                    }
+                    
+                    .navbar-brand strong {
+                        color: white;
+                    }
+                    
+                    .container img {
+                        max-width: auto;
+                        max-height: 20rem;
+                    }
+                    
+                    .container {
+                        display: inline-flexbox
+                    }
+                    
+                    .container box-1 {
+                        position: static;
+                        left: 0;
+                    }
+                    
+                    .container box-2 {
+                        position: relative;
+                        right: 0px;
+                    }

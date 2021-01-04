@@ -1,64 +1,97 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
-
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Data</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><strong>Latitude</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-    </button>
-      
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Something else here</a>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Max Temperature</a>
+                        <a class="dropdown-item" href="#">Humidity</a>
+                        <a class="dropdown-item" href="#">Cloudiness</a>
+                        <a class="dropdown-item" href="#">Windspeed</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Comparison <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/data">Data</a>
+                </li>
+            </ul>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-      </ul>
-        <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-    </div>
-  </nav>
-    <div class="fixed-top">
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-        <h5 class="text-white h4">Collapsed content</h5>
-        <span class="text-muted">Toggleable via the navbar brand.</span>
+    </nav>
+    <main>
+
+        <div class="container">
+            <section class="posts">
+                <article class="posts">
+                    <h1>Summary: Latitude vs. X</h1>
+                    <hr>
+                    <p>
+                        <figure class="figure col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <a target="_blank" href="Resources/assets/images/Fig1.png">
+                                <img src="Resources/assets/images/Fig1.png" class="figure-img img-fluid rounded" alt="Max Temperature">
+                            </a>
+                        </figure>The purpose of this project was to analyze how latitude effects weather across the world. In order to gather the data used for analysis we used the citipy generator to compile a list of cities and the OpenWeatherMap API to gather
+                        data on over 500 cities distributed across the latitudes.
+                    </p>
+                    <p>After gathering the dataset, we used Matplotlib to plot how aspects of weather were effected by latitude. The weather factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site contains the source data
+                        and visulazations used for analysis, as well as any explanations and descriptions of trends and correlations seen in the data.
+                    </p>
+                    </artilce>
+            </section>
         </div>
-    </div>
-  <nav class="navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
-    
+        <div class="container">
+            <section class="viz">
+                <article class="viz">
+                    <h1>Visualizations</h1>
+                    <hr>
+                    <article class="posts">
+                        <div class="row">
+                            <figure class="figure col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <a target="_blank" href="Resources/assets/images/Fig1.png">
+                                    <img src="Resources/assets/images/Fig1.png" class="figure-img img-fluid rounded" alt="Max Temperature">
+                                </a>
+                            </figure>
+                            <figure class="figure col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <a target="_blank" href="Resources/assets/images/Fig2.png">
+                                    <img src="Resources/assets/images/Fig2.png" alt="Humidty Map">
+                                </a>
+                            </figure>
+                            <figure class="figure col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <a target="_blank" href="Resources/assets/images/Fig3.png">
+                                <img src="Resources/assets/images/Fig3.png" alt="Cloudy Map" Map">
+                            </a>
+                            </figure>
+                            <figure class="figure col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <a target="_blank" href="Resources/assets/images/Fig4.png">
+                                    <img src="Resources/assets/images/Fig4.png" alt="Wind Speed Map">
+                                </a>
+                            </figure>
+                        </div>
+                    </article>
 
+                </article>
 
-
+            </section>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </main>
 </body>
-

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Max Temperature</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><strong>Latitude</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Max Temperature</a>
+                        <a class="dropdown-item" href="#">Humidity</a>
+                        <a class="dropdown-item" href="#">Cloudiness</a>
+                        <a class="dropdown-item" href="#">Windspeed</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Comparison <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <main>
+
+        <div class="container">
+            <section class="posts">
+                <article class="posts">
+                    <h1>Summary: Latitude vs. X</h1>
+                    <figure class="figure3">
+                        <h2>
+                            <p><a target="_blank" href="Resources/assets/images/Fig1.png">
+                            <img src="Resources/assets/images/Fig1.png" alt="Cloudy Map" Map">
+                        </a>The purpose of this project was to analyze how latitude effects weather across the world. In order to gather the data used for analysis we used the citipy generator to compile a list of cities and the OpenWeatherMap API to
+                                gather data on over 500 cities distributed across the latitudes.
+                            </p>
+                            <p>After gathering the dataset, we used Matplotlib to plot how aspects of weather were effected by latitude. The weather factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site contains the
+                                source data and visulazations used for analysis, as well as any explanations and descriptions of trends and correlations seen in the data.
+                            </p>
+                        </h2>
+                    </figure>
+                    </artilce>
+            </section>
+        </div>
+        <div class="container">
+            <section class="viz">
+                <article class="viz">
+                    <h1>Visualizations</h1>
+                    <hr>
+                    <div class="row">
+                        <figure class="figure col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <a target="_blank" href="Resources/assets/images/Fig1.png">
+                                <img src="Resources/assets/images/Fig1.png" class="figure-img img-fluid rounded" alt="Max Temperature">
+                            </a>
+                        </figure>
+                        <figure class="figure col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <a target="_blank" href="Resources/assets/images/Fig2.png">
+                                <img src="Resources/assets/images/Fig2.png" alt="Humidty Map">
+                            </a>
+                        </figure>
+                        <figure class="figure col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <a target="_blank" href="Resources/assets/images/Fig3.png">
+                            <img src="Resources/assets/images/Fig3.png" alt="Cloudy Map" Map">
+                        </a>
+                        </figure>
+                        <figure class="figure col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <a target="_blank" href="Resources/assets/images/Fig4.png">
+                                <img src="Resources/assets/images/Fig4.png" alt="Wind Speed Map">
+                            </a>
+                        </figure>
+                    </div>
+
+                </article>
+
+            </section>
+        </div>
+    </main>
+
+
+</body>
